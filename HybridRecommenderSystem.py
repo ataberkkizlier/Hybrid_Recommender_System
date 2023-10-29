@@ -124,10 +124,10 @@ percentage = len(movies_watched) * 60 / 100
 percentage
 #19.8
 
-# People who have watched more than 60% movies together with user 28941:
 
 users_same_movies = user_movie_count[user_movie_count["movie_count"] > percentage]["userId"]
 users_same_movies.count()
+users_same_movies.shape
 #4139
 '''Task 4: Identification of the Most Similar Users with the User to Make a Recommendation'''
 '''Step 1: Filter the movies_watched_dfdataframe to include the ids of users that are similar to the selected user in the user_same_movies list.'''
